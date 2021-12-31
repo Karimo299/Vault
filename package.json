@@ -1,0 +1,25 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir"
+  },
+  "build": {
+    "appId":"com.javascript.vault",
+    "productName": "Vault"
+  },
+  "author": "Karimo299",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.7.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "mongodb": "^2.2.33",
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.13.5"
+  }
+}

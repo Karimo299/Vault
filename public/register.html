@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    #rsubmit {
+      background-color: #00be9c;
+      height: 50px;
+      color: white;
+    }
+
+    #rsubmit:hover {
+      background-color: #70cdbd;
+    }
+
+    #form_wrap {
+      height: 550px;
+      top: 100px;
+    }
+
+    .inpt {
+      position: relative;
+      top: -20px;
+      border: 0;
+      width: 400px;
+      height: 30px;
+      margin: 50px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <div id="nav">
+        <li><a href="register.html"><span id="reg">Register</a></span>
+        </li>
+        <li>||</li>
+        <li><a href="index.html">Login</a></li>
+    </ul>
+    </div>
+  </header>
+  <div id="form_wrap">
+    <input class="inpt" type="text" id="ruser_name" placeholder="Username">
+    <input class="inpt" type="password" id="rpassword" placeholder="Password">
+    <input class="inpt" type="password" id="rpassword2" placeholder="Confirm Password">
+    <input class="inpt" type="button" id="rsubmit" onclick="send()" value="Login">
+  </div>
+  <script src="js/register.js" charset="utf-8"></script>
+  <script>
+  document.onkeydown = function(evt) {
+      if (evt.keyCode === 13) {
+        send();
+      }
+    }
+  </script>
+</body>
+
+</html>

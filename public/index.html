@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Secret Vault</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <div id="nav">
+        <li><a href="register.html"><span id="reg">Register</a></span>
+        </li>
+        <li>||</li>
+        <li><a href="#">Login</a></li>
+    </ul>
+    </div>
+  </header>
+  <div id="form_wrap">
+    <input class="inpt" type="text" id="user_name" placeholder="Username">
+    <input class="inpt" type="password" id="password" placeholder="Password">
+    <input class="inpt" type="button" id="submit" onclick="login()" value="Login">
+  </div>
+  <script src="js/register.js" charset="utf-8"></script>
+
+  <script>
+    require('../renderer.js')
+  </script>
+
+  <script>
+  document.onkeydown = function(evt) {
+      if (evt.keyCode === 13) {
+        login();
+      }
+    }
+  </script>
+</body>
+
+</html>
